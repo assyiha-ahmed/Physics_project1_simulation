@@ -1,0 +1,95 @@
+body {
+font-family: "Segoe UI", sans-serif;
+background-color: #0D4853;
+color: white;
+justify-content: center;
+align-items: center;
+width: 80%;
+height: 80%;
+margin: 10%;
+}
+.main-layout {
+display: flex;
+gap: 25px;
+background-color: #242424;
+padding: 30px;
+border-radius: 20px;
+box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
+border: 1px solid #3c3c3c;
+margin: 100px;
+}
+.canvas-container {
+text-align: center;
+/* align-items: center;
+justify-content: center; */
+}
+canvas {
+background-color: #0a0a0a;
+border-radius: 12px;
+border: 2px solid #333;
+}
+.sidebar {
+width: 40%;
+display: flex;
+flex-direction: column;
+gap: 12px;
+margin-top: 15%;
+}
+.input-group {
+background: #2d2d2d;
+margin: 3%;
+padding: 15px;
+border-radius: 10px;
+border-bottom: 3px solid #555;
+}
+.input-group label {
+display: block;
+font-size: 0.75rem;
+color: #aaa;
+margin-bottom: 8px;
+text-transform: uppercase;
+}
+input[type="text"] {
+background: #1a1a1a;
+border: 1px solid #444;
+color: #f1c40f;
+padding: 8px;
+width: 90%;
+border-radius: 6px;
+font-size: 1rem;
+font-weight: bold;
+text-align: center;
+}
+.stat-card {
+background: #1a1a1a;
+padding: 12px;
+border-radius: 10px;
+border-left: 4px solid #3498db;
+}
+.stat-val {
+font-size: 1.2rem;
+font-weight: bold;
+color: #3498db;
+}
+.stat-label {
+font-size: 0.7rem;
+color: #888;
+display: block;
+}
+#cycleStage {
+font-weight: bold;
+font-size: 1.1rem;
+margin-bottom: 10px;
+height: 1.5em;
+text-transform: uppercase;
+}
+#statusReport {
+font-size: 0.85rem;
+padding: 10px;
+border-radius: 6px;
+margin-top: 10px;
+background: #441111;
+color: #ff8888;
+display: none;
+border: 1px solid #ff4444;
+}

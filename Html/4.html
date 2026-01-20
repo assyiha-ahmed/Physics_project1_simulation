@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carnot Engine - Increased Clearance</title>
+    <link rel="stylesheet" href="../css/simulation_style.css" />
+  </head>
+  <body>
+    <div class="main-layout">
+      <div class="canvas-container">
+        <h2 id="engineState" style="margin: 0 0 5px 0">Carnot Engine Lab</h2>
+        <div id="cycleStage">Initializing...</div>
+        <canvas id="simCanvas" width="380" height="600"></canvas>
+        <div id="statusReport"></div>
+        <div
+          class="input-group"
+          style="
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            background: none;
+            border: none;
+          "
+        >
+          <button
+            onclick="startSim()"
+            style="
+              flex: 1;
+              padding: 10px;
+              cursor: pointer;
+              background: #2ecc71;
+              border: none;
+              border-radius: 5px;
+              color: white;
+              font-weight: bold;
+            "
+          >
+            START
+          </button>
+          <button
+            onclick="pauseSim()"
+            style="
+              flex: 1;
+              padding: 10px;
+              cursor: pointer;
+              background: #e67e22;
+              border: none;
+              border-radius: 5px;
+              color: white;
+              font-weight: bold;
+            "
+          >
+            PAUSE
+          </button>
+          <button
+            onclick="resumeSim()"
+            style="
+              flex: 1;
+              padding: 10px;
+              cursor: pointer;
+              background: #3f2e92;
+              border: none;
+              border-radius: 5px;
+              color: white;
+              font-weight: bold;
+            "
+          >
+            RESUME
+          </button>
+          <button
+            onclick="resetSim()"
+            style="
+              flex: 1;
+              padding: 10px;
+              cursor: pointer;
+              background: #e74c3c;
+              border: none;
+              border-radius: 5px;
+              color: white;
+              font-weight: bold;
+            "
+          >
+            RESET
+          </button>
+        </div>
+      </div>
+
+      <div class="sidebar">
+        <h3>Please Enter Temperatures</h3>
+        <div class="input-group">
+          <label>Hot Reservoir ($T_H$)</label>
+          <input type="text" id="thInput" value=" " />
+        </div>
+        <div class="input-group">
+          <label>Cold Reservoir ($T_C$)</label>
+          <input type="text" id="tcInput" value=" " />
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">Carnot Efficiency</span>
+          <span id="effText" class="stat-val">0%</span>
+        </div>
+
+        <div class="stat-card" style="border-left-color: #e67e22">
+          <span class="stat-label">Observation</span>
+          <span class="stat-val" style="color: #e67e22"></span>
+        </div>
+      </div>
+    </div>
+    <script src="../js/script.js"></script>
+  </body>
+</html>
